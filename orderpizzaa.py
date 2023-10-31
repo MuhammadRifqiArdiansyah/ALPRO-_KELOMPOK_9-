@@ -57,3 +57,17 @@ elif crustpizza == "Cheesy Bites":
     harga_crustpizza = 50000
 else:
     print("PESANAN ANDA TIDAK VALID")
+
+if Ekstra_Cheese == "Yes" :
+    Extra_Fee = 13000
+elif Ekstra_Cheese == "No" :
+    Exstra_Fee = 0
+else: 
+    print ("Pesanan tidak valid")
+    exit()
+    
+#Total biaya
+total_biaya = harga_pizza + harga_crust + harga_size + Extra_Fee
+# Menampilkan pesanan dan total biaya
+print("Thank you for choosing Pizza D4MI Delivery!")
+print("You final bill will be : Rp", int(total_biaya))
